@@ -1,0 +1,9 @@
+url=(
+https://chatgpt.com/c/rgnzjtkrkgre
+https://www.youtube.com/
+https://www.youtube.com/watch?v=W_IiSB_Qri4
+https://www.youtube.com/watch?v=c0VAhUHdo_Y
+"https://www.youtube.com/watch?v=jdGJWloo-OU"
+)
+### Command to add " " around each line
+# sed 's#\(http[^ ]*\)#"\1"#g' urls.txt
