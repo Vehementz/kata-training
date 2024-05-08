@@ -56,8 +56,18 @@ line was replaced. Thus we see the following for `paths`.
     paths: ['/Users/falcon/Desktop', '/Users/$USERNAME/Code'],
 ```
 
+
+The two command above in the same time 
+
+```sh
+sed -e 's/\$USERNAME/falcon/' -e 's/\$NAME/Jose Falcon/' config.json
+```
+
+
 By default, `s` only replaces the first occurence of each match on
 each line. We can use the `g` flag to replace all matches on a line.
+
+
 
 ```sh
 sed 's/$USERNAME/falcon/g' config.json
